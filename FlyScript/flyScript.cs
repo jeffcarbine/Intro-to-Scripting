@@ -5,12 +5,6 @@ public class FlyScript : MonoBehaviour {
 
 	float heightTest = 10.5f;
 
-	void Fly() {
-		/* Debug.Log("Flying up!"); */
-		Vector3 newPosition = new Vector3(0,10,0);
-		transform.position = newPosition;
-	}
-
 	void Start() {
 		/* Debug.Log(transform.position.y); */
 		if (transform.position.y <= heightTest) {
@@ -20,5 +14,12 @@ public class FlyScript : MonoBehaviour {
 			Debug.Log("Still flying!");
 		} */
 	}
+
+	void Fly() {
+		/* Debug.Log("Flying up!"); */
+		Vector3 newPosition = new Vector3(0,10,0);
+		transform.position = newPosition;
+	}
+
 
 }
